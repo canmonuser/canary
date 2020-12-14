@@ -1,0 +1,13 @@
+on:
+  workflow_dispatch:
+    inputs:
+      uuid:
+        name: 'Unique ID of this run'
+        required: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Allways all good
+        run: echo "uuid=${{ github.event.inputs.uuid }}"
