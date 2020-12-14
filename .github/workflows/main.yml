@@ -4,6 +4,9 @@ on:
       uuid:
         name: 'Unique ID of this run'
         required: true
+      webhook_url:
+        name: 'Where to send the unique id message to'
+        required: true
 
 jobs:
   build:
