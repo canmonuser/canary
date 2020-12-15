@@ -12,5 +12,5 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Allways all good
-        run: echo curl -d '{"uuid":"${{ github.event.inputs.uuid }}"}' ${{ github.event.inputs.webhook_url }}
+      - name: Post run UUID to webhook
+        run: curl -d '{"uuid":"${{ github.event.inputs.uuid }}"}' ${{ github.event.inputs.webhook_url }}
