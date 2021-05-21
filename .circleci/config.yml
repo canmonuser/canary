@@ -3,21 +3,21 @@ version: 2.1
 # Use a package of configuration called an orb.
 
 jobs:
-  run-machine:
+  runMachine:
     machine:
       image: ubuntu-2004:202104-01
     steps:
       - run: echo "Machine execution run"
-  run-docker:
+  runDocker:
     docker:
       - image: cimg/base:2021.04
     steps:
       - run: echo "Docker execution run"
 
 workflows:
-  monitor-machine:
+  monitorMachine:
     jobs:
       - run-machine
-  monitor-docker:
+  monitorDocker:
     jobs:
       - run-docker
