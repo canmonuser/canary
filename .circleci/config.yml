@@ -4,8 +4,10 @@ version: 2.1
 
 jobs:
   run:
-    docker:
-      - image: cimg/base:2021.04
+#     docker:
+#       - image: cimg/base:2021.04
+    machine:
+      image: ubuntu-2004:202104-01
     steps:
       - run: echo "Hello world"
 
