@@ -15,9 +15,9 @@ jobs:
       - run: echo "Docker execution run"
 
 workflows:
-  monitorMachine:
+  MonitorMachine:
     jobs:
       - RunMachine
-  monitorDocker:
+  MonitorDocker:
     jobs:
       - RunDocker
