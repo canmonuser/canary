@@ -11,6 +11,7 @@ jobs:
   RunDocker:
     docker:
       - image: cimg/base:2021.04
+    resource_class: small
     steps:
       - run: echo "Docker execution run"
 
